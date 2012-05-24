@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parametri_DB type="remoto">
+    <DRIVER_CLASS>org.gjt.mm.mysql.Driver</DRIVER_CLASS>
+    <DBMS>jdbc:mysql</DBMS>
+    <SERVER>82.104.66.108</SERVER>
+    <PORT>3306</PORT>
+    <DB>mxdb</DB>
+    <USER_ID>root</USER_ID>
+    <PASSW>citcit</PASSW>
+</Parametri_DB>

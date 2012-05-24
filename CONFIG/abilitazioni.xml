@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT>
+    <Agente type="COD_AG1">
+        <azienda>cod_Azienda1</azienda>
+        <azienda>cod_Azienda2</azienda>
+        <azienda>cod_Azienda3</azienda>
+    </Agente>
+    <Agente type="COD_AG2">
+        <azienda>cod_Azienda1</azienda>
+        <azienda>cod_Azienda2</azienda>
+    </Agente>
+    <Agente type="COD_AGE3">
+        <azienda>cod_Azienda1</azienda>
+    </Agente>
+</ROOT>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="/Users/WatchTower/Downloads/jdom-2.0.1/jdom-2.0.1.jar" sourcepath="/Users/WatchTower/Downloads/jdom-2.0.1/jdom-2.0.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/Users/WatchTower/Downloads/jdom-2.0.1/jdom-2.0.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/Sviluppo/workspace/Server_DB_Sync/src/DB_Connection/mysql-connector-java-5.1.20-bin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

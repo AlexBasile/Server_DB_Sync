@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT>
+  <Param type="telecom">
+    <DRIVER_CLASS>org.gjt.mm.mysql.Driver</DRIVER_CLASS>
+    <DBMS>jdbc:mysql</DBMS>
+    <SERVER>82.104.66.108</SERVER>
+    <PORT>3306</PORT>
+    <DB>mxdb</DB>
+    <USER_ID>Sto Cazzo</USER_ID>
+    <PASSW>citcit</PASSW>
+  </Param>
+  <Param type="albacom">
+    <DRIVER_CLASS>org.gjt.mm.mysql.Driver</DRIVER_CLASS>
+    <DBMS>jdbc:mysql</DBMS>
+    <SERVER>213.255.20.57</SERVER>
+    <PORT>3306</PORT>
+    <DB>mxdb</DB>
+    <USER_ID>root</USER_ID>
+    <PASSW>citcit</PASSW>
+  </Param>
+  <Param type="locale">
+    <DRIVER_CLASS>org.gjt.mm.mysql.Driver</DRIVER_CLASS>
+    <DBMS>jdbc:mysql</DBMS>
+    <SERVER>192.168.1.100</SERVER>
+    <PORT>3306</PORT>
+    <DB>mxdb</DB>
+    <USER_ID>root</USER_ID>
+    <PASSW>citcit</PASSW>
+  </Param>
+</ROOT>
