@@ -98,5 +98,41 @@ public class DbAccess {
     		System.out.println("Impossibile chiudere la connessione");
     	 }
     }
+	
+	
+	/**
+	 * Metodo per controllare che la connessione esista e quale sia
+	 * il database su cui sta leggendo/scrivendo 
+	 * @param type - indica il tipo di connessione che si vuole verificare
+	 * @return true - false
+	 */
+	public static boolean check_connection(String type)
+	{
+		boolean uguale = true;
+		if(DbAccess.getConnection() != null)
+		{
+			/*imposto i tag da adare a leggere dal file di configurazione */
+			LinkedList<String> tags = new LinkedList<String>();
+			tags.add("DB");
+			tags.add("USER_ID");
+		
+			//Leggo il contenuto dei tag dal file XML
+			LinkedList<Tag> parametri = XML_Interface.readFile_XML("CONFIG/connection_db.xml",
+																	tags,
+																	type);
+			for(Tag t : parametri)
+			{
+				if(t.getNomeTag().equalsIgnoreCase("DB")) {
+					if(!t.getContenuto().equals(DB))
+						uguale = false;
+				}if(t.getNomeTag().equalsIgnoreCase("USER_ID")) {
+					if(!t.getContenuto().equals(USER_ID))
+						uguale = false;
+				} if(!uguale) break;
+			}
+			
+		}else uguale = false;
+		return uguale;
+	}
 
 }

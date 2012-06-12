@@ -14,7 +14,7 @@ public class Azienda
 	private String descrizione;
 	private String indirizzo;
 	private String localita;
-	private int cap;
+	private Integer cap;
 	private String prov;
 	
 	public Azienda()
@@ -28,7 +28,7 @@ public class Azienda
 				   String descrizione,
 				   String indirizzo,
 				   String localita,
-				   int cap,
+				   Integer cap,
 				   String prov)
 	{
 		this.setCod_Azienda(cod_Azienda);
@@ -39,6 +39,80 @@ public class Azienda
 		this.setLocalita(localita);
 		this.setCap(cap);
 		this.setProv(prov);
+	}
+	
+	/*
+	 *	Metodo per gestire l'ugualianza tra due aziende
+	 */
+	
+	public String toString()
+	{
+		return cod_Azienda + " " + ragione_soc + " " + p_IVA + " " +
+			   descrizione + " " + indirizzo + " " + localita + " " +
+			   cap + " " + prov;	
+	}
+	
+	private static boolean check_Equals(Object o1, Object o2)
+	{
+		if(o1 != null && o2 != null)
+			return o1.equals(o2);
+		else if(o1 == null && o2 == null)
+			return true;
+		else return false;
+	}
+	
+	public boolean equals(Azienda az2)
+	{
+		return (check_Equals(this.cod_Azienda, az2.getCod_Azienda()) &&
+				check_Equals(this.ragione_soc, az2.getRagione_soc()) &&
+				check_Equals(this.p_IVA, az2.getP_IVA()) &&
+				check_Equals(this.descrizione, az2.getDescrizione()) &&
+				check_Equals(this.indirizzo, az2.getIndirizzo()) &&
+				check_Equals(this.localita, az2.getLocalita()) &&
+				check_Equals(this.cap, az2.getCap()) &&
+				check_Equals(this.prov, az2.getProv()));
+	}
+	
+	/**
+	 * Genero uno stringa descrittiva per il salvataggio dei dati nel DB
+	 * @return String
+	 */
+	
+	public String StringToDb()
+	{
+		String values;
+		
+		values = "\""+this.cod_Azienda+"\", \"";
+		
+		if(this.ragione_soc != null)
+			values += this.ragione_soc;
+		values += "\", \"";
+		
+		if(this.p_IVA != null)
+			values += this.p_IVA;
+		values += "\", \"";
+		
+		if(this.descrizione != null)
+			values += this.descrizione;
+		values += "\", \"";
+		
+		if(this.indirizzo != null)
+			values += this.indirizzo;
+		values += "\", \"";
+		
+		if(this.localita != null)
+			values += this.localita;
+		values += "\", \"";
+		
+		if(this.cap != null)
+			values += this.cap.toString();
+		values += "\", \"";
+		
+		if(this.prov != null)
+			values += this.prov;
+		values += "\"";
+		
+		return values;
 	}
 
 	public String getCod_Azienda() {
@@ -89,11 +163,11 @@ public class Azienda
 		this.localita = localita;
 	}
 
-	public int getCap() {
+	public Integer getCap() {
 		return cap;
 	}
 
-	public void setCap(int cap) {
+	public void setCap(Integer cap) {
 		this.cap = cap;
 	}
 
@@ -104,7 +178,5 @@ public class Azienda
 	public void setProv(String prov) {
 		this.prov = prov;
 	}
-	
-	
 
 }

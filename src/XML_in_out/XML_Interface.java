@@ -63,4 +63,15 @@ public class XML_Interface
 		return valori;
 	}
 	
+	/*
+	 * Metodo che trova un tag che abbia il nome uguale a quello passato in
+	 * input e ne restituisce il contenuto
+	 */
+	public static String readValue_ForTagName(LinkedList<Tag> valori, String name)
+	{
+		for(Tag tg : valori)
+			if(tg.getNomeTag().equals(name))
+				return tg.getContenuto();
+		return null;
+	}
 }

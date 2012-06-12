@@ -1,0 +1,43 @@
+<ROOT>
+    <TABELLA type="AZIENDA">
+        <NOME_TAB>Azienda</NOME_TAB>
+        <ID>COD_Azienda</ID>
+        <RAGIONE_S>RAG_Soc</RAGIONE_S>
+        <PIVA>P_IVA</PIVA>
+        <DESCRIZIONE>Descrizione</DESCRIZIONE>
+        <INDIRIZZO>Indirizzo</INDIRIZZO>
+        <LOCALITA>Localita</LOCALITA>
+        <CAP>CAP</CAP>
+        <PROVINCIA>PROV</PROVINCIA>
+    </TABELLA>
+    <TABELLA type="RAGGRUPPAMENTI">
+        <NOME_TAB>Raggruppamenti</NOME_TAB>
+        <ID_AZIENDA>COD_AZIENDA</ID_AZIENDA>
+        <ID_RAG>COD_RAGGRUPPAMENTO</ID_RAG>
+    </TABELLA>
+    <TABELLA type="ZONE">
+        <NOME_TAB>Zone</NOME_TAB>
+        <ID>ID_Zona</ID>
+        <DESCRIZIONE>Descrizione</DESCRIZIONE>
+        <ID_AZIENDA>COD_Azienda</ID_AZIENDA>
+    </TABELLA>
+    <TABELLA type="CAT_CLIENTI">
+        <NOME_TAB>Cat_Clienti</NOME_TAB>
+        <ID_AZIENDA>COD_AZIENDA</ID_AZIENDA>
+        <ID>ID_CAT</ID>
+        <DESCRIZIONE>Descrizione</DESCRIZIONE>
+    </TABELLA>
+    <TABELLA type="CLIENTI_ANAG">
+        <NOME_TAB>Clienti_ANAG</NOME_TAB>
+        <ID>COD_Cliente</ID>
+        <ID_RAG>COD_RAGG</ID_RAG>
+        <RAGIONE_S>RAG_Sociale</RAGIONE_S>
+        <PIVA>P_IVA</PIVA>
+        <INDIRIZZO>Indirizzo</INDIRIZZO>
+        <CAP>CAP</CAP>
+        <LOCALITA>Localita</LOCALITA>
+        <SPEDIZIONE>Loc_spedizione</SPEDIZIONE>
+        <PROVINCIA>Prov</PROVINCIA>
+        <TELEFONO>Tel</TELEFONO>
+    </TABELLA>
+</ROOT>

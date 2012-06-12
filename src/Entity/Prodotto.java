@@ -4,6 +4,7 @@ package Entity;
  * @author Alessandro Basile
  * @version 1.0
  */
+
 /*
  * Classe per la gestione dei Prodotti;
  */
@@ -11,12 +12,10 @@ public class Prodotto
 {
 	private String cod_Articolo;
 	private String cod_Azienda;
-	private int form_prezzo;
 	private String descrizione;
 	private String unit_misura;
-	private float costo_std;
-	private float confezioni;
-	private float iva;
+	private Double confezioni;
+	private String iva;
 	private String fornitore;
 	private String nota1;
 	private String nota2;
@@ -28,27 +27,51 @@ public class Prodotto
 	
 	public Prodotto(String cod_Art,
 					String cod_Az,
-					int riga_prezzo,
 					String descr,
 					String um,
-					float cost_s,
-					float conf,
-					float iva,
+					Double conf,
+					String iva,
 					String fornitore,
 					String nota1,
 					String nota2)
 	{
 		this.setCod_Articolo(cod_Art);
 		this.setCod_Azienda(cod_Az);
-		this.setForm_prezzo(riga_prezzo);
 		this.setDescrizione(descr);
 		this.setUnit_misura(um);
-		this.setCosto_std(cost_s);
 		this.setConfezioni(conf);
 		this.setIva(iva);
 		this.setFornitore(fornitore);
 		this.setNota1(nota1);
 		this.setNota2(nota2);
+	}
+	
+	
+	private static boolean check_Equals(Object o1, Object o2)
+	{
+		if(o1 != null && o2 != null)
+			return o1.equals(o2);
+		else if(o1 == null && o2 == null)
+			return true;
+		else return false;
+	}
+	
+	/**
+	 * Metodo per la gestione dell'ugualianza tra entita prodotto
+	 * @param p2 - Prodotto
+	 * @return true - false
+	 */
+	public boolean equals(Prodotto p2)
+	{
+		return (check_Equals(this.cod_Articolo, p2.getCod_Articolo()) &&
+				check_Equals(this.cod_Azienda, p2.getCod_Azienda()) &&
+				check_Equals(this.confezioni, p2.getConfezioni()) &&
+				check_Equals(this.descrizione, p2.getDescrizione()) &&
+				check_Equals(this.fornitore, p2.getFornitore()) &&
+				check_Equals(this.iva, p2.getIva()) &&
+				check_Equals(this.nota1, p2.getNota1()) &&
+				check_Equals(this.nota2, p2.getNota2()) &&
+				check_Equals(this.unit_misura, p2.getUnit_misura()));
 	}
 
 	public String getCod_Articolo() {
@@ -67,14 +90,6 @@ public class Prodotto
 		this.cod_Azienda = cod_Azienda;
 	}
 
-	public int getForm_prezzo() {
-		return form_prezzo;
-	}
-
-	public void setForm_prezzo(int form_prezzo) {
-		this.form_prezzo = form_prezzo;
-	}
-
 	public String getDescrizione() {
 		return descrizione;
 	}
@@ -91,27 +106,19 @@ public class Prodotto
 		this.unit_misura = unit_misura;
 	}
 
-	public float getCosto_std() {
-		return costo_std;
-	}
-
-	public void setCosto_std(float costo_std) {
-		this.costo_std = costo_std;
-	}
-
-	public float getConfezioni() {
+	public Double getConfezioni() {
 		return confezioni;
 	}
 
-	public void setConfezioni(float confezioni) {
-		this.confezioni = confezioni;
+	public void setConfezioni(Double conf) {
+		this.confezioni = conf;
 	}
 
-	public float getIva() {
+	public String getIva() {
 		return iva;
 	}
 
-	public void setIva(float iva) {
+	public void setIva(String iva) {
 		this.iva = iva;
 	}
 

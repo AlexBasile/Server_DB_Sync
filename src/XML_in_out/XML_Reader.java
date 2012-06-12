@@ -52,14 +52,12 @@ public class XML_Reader
 				//Cerca il TAG di apertura, quando lo trova il tag di apertura 
 				public void startElement(String uri, String localName,String qName, 
 						Attributes attributes) throws SAXException
-						{
+				{
 					//Gestione dell'attributo di ogni oggetto
 					String tag_attr = attributes.getValue(0);
 					if(attr == null && tag_attr != null)
 					{	
 						attr_tmp = tag_attr;
-						//System.out.print(attributes.getValue(0) + " attr_tmp = " + attr_tmp);
-						//System.out.print("\n");
 					}
 					//Gestione di tutte le componenti di ogni nodo con lo stesso attributo
 					if(attributes.getLength() > 0 &&  attributes.getValue(0).equalsIgnoreCase(attr_tmp) && attr_tmp != null)
@@ -81,16 +79,16 @@ public class XML_Reader
 						}
 
 					}
-						}
+				}
 
 				public void endElement(String uri, String localName,
 						String qName) throws SAXException
-						{
+				{
 					if(qName == tag_Padre)
 					{
 						attributo = false;
 					}
-						}
+				}
 
 				public void characters(char ch[], int start, int length) throws SAXException
 				{
@@ -127,7 +125,7 @@ public class XML_Reader
 			{
 				System.out.println(t.toString());
 			}
-			*/
+			 */
 		}catch(Exception e)
 		{
 			e.printStackTrace();

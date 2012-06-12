@@ -57,7 +57,7 @@
     <Param type="localhost">
         <DRIVER_CLASS>com.mysql.jdbc.Driver</DRIVER_CLASS>
         <DBMS>jdbc:mysql</DBMS>
-        <SERVER>localhost</SERVER>
+        <SERVER>127.0.0.1</SERVER>
         <PORT>3306</PORT>
         <DB>Paiano_DB_Sync</DB>
         <USER_ID>root</USER_ID>

@@ -1,0 +1,1 @@
+SELECT * FROM Clienti_ANAG

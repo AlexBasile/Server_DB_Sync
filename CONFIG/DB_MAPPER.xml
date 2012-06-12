@@ -1,0 +1,36 @@
+<ROOT>
+    <DB_TABLES type="DB_Sync">
+        <AZIENDE>Azienda</AZIENDE>
+        <RAGGRUPPAMENTI>Raggruppamenti</RAGGRUPPAMENTI>
+        <AGENTI>Agenti</AGENTI>
+        <CLIENTI_ANAGRAFICA>Clienti_ANAG</CLIENTI_ANAGRAFICA>
+        <ACCESSI>Accessi</ACCESSI>
+        <CATALOGHI>Catalogo</CATALOGHI>
+        <CATEGORIE_CLIENTI>Cat_Clienti</CATEGORIE_CLIENTI>
+        <AZIENDA_CLIENTI>Clienti_Azienda</AZIENDA_CLIENTI>
+        <CONTATTI_AGENTE>Contatti_Agente</CONTATTI_AGENTE>
+        <LISTINI>Listini</LISTINI>
+        <MOVIMENTI_MAGAZZINO>Movimenti_Magazzino</MOVIMENTI_MAGAZZINO>
+        <ARTICOLI>Prodotti</ARTICOLI>
+        <AGENTE_AZIENDA>Rappresenta</AGENTE_AZIENDA>
+        <SCADENZIARIO>Scadenziario</SCADENZIARIO>
+        <ZONE>Zone</ZONE>
+    </DB_TABLES>
+    <META_TAG type="DB_Sync">
+        <TAG>AZIENDE</TAG>
+        <TAG>RAGGRUPPAMENTI</TAG>
+        <TAG>AGENTI</TAG>
+        <TAG>CLIENTI_ANAGRAFICA</TAG>
+        <TAG>ACCESSI</TAG>
+        <TAG>CATALOGHI</TAG>
+        <TAG>CATEGORIE_CLIENTI</TAG>
+        <TAG>AZIENDA_CLIENTI</TAG>
+        <TAG>CONTATTI_AGENTE</TAG>
+        <TAG>LISTINI</TAG>
+        <TAG>MOVIMENTI_MAGAZZINO</TAG>
+        <TAG>ARTICOLI</TAG>
+        <TAG>AGENTE_AZIENDA</TAG>
+        <TAG>SCADENZIARIO</TAG>
+        <TAG>ZONE</TAG>
+    </META_TAG>
+</ROOT>

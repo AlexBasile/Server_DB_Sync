@@ -1,0 +1,43 @@
+<ROOT>
+    <TABELLA type="AZIENDA">
+        <TAG>NOME_TAB</TAG>
+        <TAG>ID</TAG>
+        <TAG>RAGIONE_S</TAG>
+        <TAG>PIVA</TAG>
+        <TAG>DESCRIZIONE</TAG>
+        <TAG>INDIRIZZO</TAG>
+        <TAG>LOCALITA</TAG>
+        <TAG>CAP</TAG>
+        <TAG>PROVINCIA</TAG>
+    </TABELLA>
+    <TABELLA type="RAGGRUPPAMENTI">
+        <TAG>NOME_TAB</TAG>
+        <TAG>ID_AZIENDA</TAG>
+        <TAG>ID_RAG</TAG>
+    </TABELLA>
+    <TABELLA type="ZONE">
+        <TAG>NOME_TAB</TAG>
+        <TAG>ID</TAG>
+        <TAG>DESCRIZIONE</TAG>
+        <TAG>ID_AZIENDA</TAG>
+    </TABELLA>
+    <TABELLA type="CAT_CLIENTI">
+        <TAG>NOME_TAB</TAG>
+        <TAG>ID_AZIENDA</TAG>
+        <TAG>ID</TAG>
+        <TAG>DESCRIZIONE</TAG>
+    </TABELLA>
+    <TABELLA type="CLIENTI_ANAG">
+        <TAG>NOME_TAB</TAG>
+        <TAG>ID</TAG>
+        <TAG>ID_RAG</TAG>
+        <TAG>RAGIONE_S</TAG>
+        <TAG>PIVA</TAG>
+        <TAG>INDIRIZZO</TAG>
+        <TAG>CAP</TAG>
+        <TAG>LOCALITA</TAG>
+        <TAG>SPEDIZIONE</TAG>
+        <TAG>PROVINCIA</TAG>
+        <TAG>TELEFONO</TAG>
+    </TABELLA>    
+</ROOT>

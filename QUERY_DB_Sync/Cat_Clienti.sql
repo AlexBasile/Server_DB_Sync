@@ -1,0 +1,1 @@
+SELECT * FROM Cat_Clienti;
